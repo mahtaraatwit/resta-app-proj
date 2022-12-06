@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "ADB0D74A-D7B0-45CE-8F25-FA05E0EA3379"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "750E5415-349F-41A1-BA3E-2A5889F175DF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "resta/Views/CheckInView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "init?(coder:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "750E5415-349F-41A1-BA3E-2A5889F175DF - 6dfa00c914557da9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "resta.CheckInView.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;resta.CheckInView&gt;"
+                  moduleName = "resta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amen/Desktop/Ios%20apps/resta/resta/Views/CheckInView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "750E5415-349F-41A1-BA3E-2A5889F175DF - 958b5b3e65eafeb3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "resta.CheckInView.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;resta.CheckInView&gt;"
+                  moduleName = "resta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amen/Desktop/Ios%20apps/resta/resta/Views/CheckInView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
