@@ -49,11 +49,19 @@ class HomeViewController: UIViewController, MoodDelegate {
         
         moodControllerVC.completionHandler = { [self] text in
             print("text in \(text)")
-            checkin.moodButton.isEnabled = false
+            //checkin.moodButton.isEnabled = false
+           
             
             switch text {
                 case 1:
                 checkin.backgroundColor = .green
+                checkin.moodDisplay.text = "Mood today is GOOD "
+                case 2:
+                checkin.backgroundColor = .red
+                checkin.moodDisplay.text = "Mood today is BAD "
+                case 3:
+                checkin.backgroundColor = .yellow
+                checkin.moodDisplay.text = "Mood today is ALRIGHT "
             default:
                 break
             }

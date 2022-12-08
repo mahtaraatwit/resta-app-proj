@@ -14,8 +14,8 @@
             filePath = "resta/Views/CheckInView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "init?(coder:)"
             landmarkType = "7">
             <Locations>

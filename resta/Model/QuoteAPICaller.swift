@@ -36,7 +36,7 @@ final class APICaller {
                 do {
                    
                   
-                    let result = try JSONDecoder().decode(APIResponse.self, from: data)
+
                     //print("adsf")
                    //print("quotes \(result.quotes)")
                     //let result = String(data: data, encoding: .utf8)!

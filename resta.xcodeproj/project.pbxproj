@@ -32,6 +32,7 @@
 		17016356293D439200D36DBC /* MoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17016355293D439200D36DBC /* MoodViewController.swift */; };
 		17016358293D6BBC00D36DBC /* MoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17016357293D6BBC00D36DBC /* MoodView.swift */; };
 		1701635A293D803700D36DBC /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17016359293D803700D36DBC /* TimerView.swift */; };
+		4C699E30F31A4CF660B88E31 /* libPods-resta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 804D633EB139A873269771EE /* libPods-resta.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,9 @@
 		17016355293D439200D36DBC /* MoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodViewController.swift; sourceTree = "<group>"; };
 		17016357293D6BBC00D36DBC /* MoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodView.swift; sourceTree = "<group>"; };
 		17016359293D803700D36DBC /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		23FC67984281F7E6A0DAB17D /* Pods-resta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-resta.debug.xcconfig"; path = "Target Support Files/Pods-resta/Pods-resta.debug.xcconfig"; sourceTree = "<group>"; };
+		29ABC1B3C9DE0B53A10EBCE2 /* Pods-resta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-resta.release.xcconfig"; path = "Target Support Files/Pods-resta/Pods-resta.release.xcconfig"; sourceTree = "<group>"; };
+		804D633EB139A873269771EE /* libPods-resta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-resta.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C699E30F31A4CF660B88E31 /* libPods-resta.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +85,8 @@
 			children = (
 				170163172938DF7400D36DBC /* resta */,
 				170163162938DF7400D36DBC /* Products */,
+				94D291CAE4C451B343E70A0C /* Pods */,
+				8A02AAD9B1D5C5A613E9C10E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,6 +163,23 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		8A02AAD9B1D5C5A613E9C10E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				804D633EB139A873269771EE /* libPods-resta.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94D291CAE4C451B343E70A0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23FC67984281F7E6A0DAB17D /* Pods-resta.debug.xcconfig */,
+				29ABC1B3C9DE0B53A10EBCE2 /* Pods-resta.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,6 +187,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 170163292938DF7400D36DBC /* Build configuration list for PBXNativeTarget "resta" */;
 			buildPhases = (
+				6CC2A4DE0B45D86B633CC4C2 /* [CP] Check Pods Manifest.lock */,
 				170163112938DF7300D36DBC /* Sources */,
 				170163122938DF7300D36DBC /* Frameworks */,
 				170163132938DF7300D36DBC /* Resources */,
@@ -221,6 +246,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6CC2A4DE0B45D86B633CC4C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-resta-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		170163112938DF7300D36DBC /* Sources */ = {
@@ -384,6 +434,7 @@
 		};
 		1701632A2938DF7400D36DBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23FC67984281F7E6A0DAB17D /* Pods-resta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -404,6 +455,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.resta-app.resta";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/amen/Desktop/Ios apps/resta/Pods/FSCalendar/FSCalendar/FSCalendar.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -411,6 +463,7 @@
 		};
 		1701632B2938DF7400D36DBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29ABC1B3C9DE0B53A10EBCE2 /* Pods-resta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -431,6 +484,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.resta-app.resta";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/amen/Desktop/Ios apps/resta/Pods/FSCalendar/FSCalendar/FSCalendar.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

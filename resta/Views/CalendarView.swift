@@ -8,8 +8,11 @@
 import Foundation
 import UIKit
 
+
 class CalendarView: UIView {
     //initWithFrame to init view from code
+    
+
     override init(frame: CGRect) {
       super.init(frame: frame)
       setupView()
@@ -24,6 +27,7 @@ class CalendarView: UIView {
     //common func to init our view
     private func setupView() {
       backgroundColor = .red
+        
     }
 
     

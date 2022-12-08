@@ -12,10 +12,37 @@ protocol MoodDelegate: AnyObject {
     func moodButtonPressed()
 }
 
+protocol MoodTodayDelegate: AnyObject {
+    func moodDayButtonPressed()
+}
 class CheckInView: UIView {
     
+    let motivationalQuoteList: [String] = ["Genius is one percent inspiration and ninety-nine percent perspiration.",
+ "Difficulties increase the nearer we get to the goal.","Fate is in your hands and no one elses"
+    ]
     weak var delegate: MoodDelegate!
+    weak var delegateM: MoodTodayDelegate!
     
+    lazy var moodDisplay: UILabel = {
+        let label = UILabel()
+        label.frame = CGRect(x: 50, y: 300, width: 300, height: 50)
+        label.backgroundColor = .white
+        //label.layer.cornerRadius = 5
+        label.adjustsFontSizeToFitWidth = true
+        //label.text = motivationalQuoteList.randomElement()
+        //label.font = UIFont(name: "Calibri", size: 5)
+        return label
+    }()
+    lazy var motivationalQuote: UILabel = {
+        let label = UILabel()
+        label.frame = CGRect(x: 50, y: 600, width: 300, height: 50)
+        label.backgroundColor = .white
+        //label.layer.cornerRadius = 5
+        label.adjustsFontSizeToFitWidth = true
+        label.text = motivationalQuoteList.randomElement()
+        //label.font = UIFont(name: "Calibri", size: 5)
+        return label
+    }()
     
     lazy var moodButton: UIButton = {
         let button = UIButton(type: .custom)
@@ -53,12 +80,18 @@ class CheckInView: UIView {
     }
     
     private func setupView() {
+      addSubview(moodDisplay)
+      addSubview(motivationalQuote)
       addSubview(moodButton)
       //setupLayout()
     }
     
     @objc func buttonPress() {
         delegate.moodButtonPressed()
+    }
+    
+    @objc func moodButtonpress() {
+        delegateM.moodDayButtonPressed()
     }
    
     
