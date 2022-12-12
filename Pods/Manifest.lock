@@ -1,0 +1,20 @@
+PODS:
+  - FSCalendar (2.8.4)
+  - MagicTimer (1.0.4)
+
+DEPENDENCIES:
+  - FSCalendar
+  - MagicTimer
+
+SPEC REPOS:
+  trunk:
+    - FSCalendar
+    - MagicTimer
+
+SPEC CHECKSUMS:
+  FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
+  MagicTimer: e39ab4d63c759eed0cee34f521002f099bdcc472
+
+PODFILE CHECKSUM: a700e75420b59b41a4a88df787bcc460d4036a79
+
+COCOAPODS: 1.11.3

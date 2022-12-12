@@ -1,0 +1,6 @@
+module Pods_resta {
+  umbrella header "Pods-resta-umbrella.h"
+
+  export *
+  module * { export * }
+}
